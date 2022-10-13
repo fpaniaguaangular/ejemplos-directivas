@@ -1,0 +1,11 @@
+<h1>ngStyle</h1>
+<div [ngStyle]="{color:'orange',fontSize:'3em'}">Utilizando ngStyle en HTML</div>
+<div [ngStyle]="estilo" (mouseenter)="cambiar()" (mouseleave)="cambiar()">Utilizando ngStyle en TS</div>
+<div>
+    <input type="text" [(ngModel)]="password" placeholder="Contraseña" [ngStyle]="{padding:'10px'}" (input)="validar()">
+    <span [ngStyle]="estiloMensaje">{{mensaje}}</span>
+</div>
+<input type="color" [(ngModel)]="estilo.backgroundColor">
+<h1>ngClass</h1>
+<input type="text" (input)="modificarClase()" [(ngModel)]="texto">
+<span [ngClass]="estilosNgClass">Mensaje formateado con ngClasss</span>

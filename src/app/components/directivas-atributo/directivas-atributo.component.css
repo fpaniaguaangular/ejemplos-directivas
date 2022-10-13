@@ -1,0 +1,15 @@
+.correcto {
+    color:green;
+}
+
+.erroneo {
+    color:red;
+}
+
+.normal {
+    font-weight: 100;
+}
+
+.resaltado {
+    font-weight: bolder;
+}
