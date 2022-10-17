@@ -1,0 +1,23 @@
+<ng-template #template1>
+    <div>
+        Contenido del template 1
+        Bla,bla...
+        Bla,bla...
+        Bla,bla...
+    </div>
+</ng-template>
+<ng-template #template2>
+    <div>
+        Contenido del template 2
+        Bla,bla...
+        Bla,bla...
+        Bla,bla...
+    </div>
+</ng-template>
+
+<h1>DIRECTIVA NG-TEMPLATE</h1>
+
+<ng-container *ngTemplateOutlet="template1"></ng-container>
+<ng-container *ngTemplateOutlet="template2"></ng-container>
+
+<ng-container *ngComponentOutlet="componenteCopiaYPega"></ng-container>

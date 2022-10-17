@@ -1,0 +1,32 @@
+<h1>DIRECTIVAS ESTRUCTURALES</h1>
+<div *ngIf="existe">Si existe, se muestra</div>
+<div *ngIf="existe then bloque1 else bloque2">
+</div>
+
+<ng-template #bloque1>
+    COMPRA ACCIONES DE CAJA DE AHORROS DE MARTE
+</ng-template>
+
+<ng-template #bloque2>
+    CON LOS BITCOINS TE HARÁS DE ORO
+</ng-template>
+
+<ul>
+    <li *ngFor="let dia of diasLaborables">
+        {{dia}}
+    </li>
+</ul>
+
+<ol>
+    <li *ngFor="let posicion of contador; index as i">
+        Opción - {{i}}
+    </li>
+</ol>
+
+<h2>ngSwitch</h2>
+<div [ngSwitch]="variableControl">
+	<div *ngSwitchCase="'uno'">Contenido 1</div>
+	<div *ngSwitchCase="'dos'">Contenido 2</div>
+	<div *ngSwitchDefault>Contenido por defecto</div>
+</div>
+

@@ -26,6 +26,8 @@ export class DirectivasAtributoComponent implements OnInit {
 
   public passwordValida:boolean=false;
 
+  public acertado:boolean = true;
+
   estilo = {
     color:"red",
     backgroundColor:"blue",
